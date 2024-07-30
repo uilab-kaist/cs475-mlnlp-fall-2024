@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS475: ML for NLP (Fall 2024)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #004c98;
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            max-width: 1200px; /* Adjust this value as needed */
+            margin: 0 auto;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px; /* Adds space between nav items */
+            padding: 5px 10px; /* Adds some padding around the text */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .course-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .course-info h1 {
+            margin: 0; /* Remove default margin from the h1 to align it properly */
+        }
+        .staff-member {
+            text-align: center;
+        }
+        .staff-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        li {
+            line-height: 1.3; /* Adjust this value as needed */
+            margin-bottom: 5px; /* Adds space between list items */
+        }
+        .indented-content {
+            margin-left: 2em; /* Adjust this value to increase or decrease the indentation */
+        }
+        h1, h2, h3, h4, h5, h6 {
+        color: #004c98;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#description">Course Description</a>
+            <a href="#logistics">Class Logistics</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#evaluation">Evaluation</a>
+            <a href="#policy">Class Policy</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section id="home">
+            <div class="course-info">
+                <img src="src/img/kaist-logo.png" alt="KAIST Logo" class="logo">
+                <h1>CS475: ML for NLP</h1>
+                <!-- <img src="https://placehold.co/100x100?text=Stanford" alt="Stanford Logo" class="logo"> -->
+            </div>
+
+            <h2>Fall 2024</h2>
+
+            <p>Welcome to CS475 Fall 2024! </p>
+            <p>CS475 has been redesigned in Fall 2024. The coursework in this semester will differ significantly from the previous offerings of the class. You will also receive significantly more guidance regarding the group projects and assignments from the course staff. </p>
+            <p>Time to fall in love with languages! </p>
+
+            <h2>Instructors</h2>
+            <div class="staff-grid">
+                <div class="staff-member">
+                    <img src="src/img/alice.jpg" alt="Alice Oh">
+                    <p><a href="https://aliceoh9.github.io/">Alice Oh</a></p>
+                </div>
+            </div>
+
+            <h2>Teaching Assistants</h2>
+            <div class="staff-grid">
+                <div class="staff-member">
+                    <img src="src/img/sheikh.png" alt="Sheikh Shafayat">
+                    <p><a href="https://sheikhshafayat.github.io/">Sheikh Shafayat</a></p>
+                </div>
+                <div class="staff-member">
+                    <img src="src/img/faiz.jpg" alt="Faiz">
+                    <p><a href="https://www.linkedin.com/in/faiz-haznitrama/">Faiz Ghifari Haznitrama</a></p>
+                </div>
+                <div class="staff-member">
+                    <img src="https://placehold.co/100x100?text=TBA" alt="TBA">
+                    <p>TBA</p>
+                </div>
+                <!-- Add more teaching assistants as needed -->
+            </div>
+        </section>
+
+        <section id="description">
+
+
+            <h1>Course Description</h1>
+            <p>This is a project-oriented class and the primary goal is to provide you with foundations for doing cutting-edge research in Natural Language Processing (NLP). </p>
+            <p>By the end of this class, you are expected to be able to:</p>
+            <ul>
+                <li>Understand different paradigms and concepts of NLP</li>
+                <li>Get used to reading and understanding recent NLP papers</li>
+                <li>Implement some core concepts and techniques</li>
+                <li>Be able to replicate/conduct recent NLP studies</li>
+                <li>Communicate in written and spoken English about NLP+ML research</li>
+            </ul>
+
+
+            <h2>Why take this class?</h2>
+            You want to take this class if you are:
+            <ul>
+                <li>Interested in machine learning and natural language processing</li>
+                <li>Fascinated by human language and intelligence</li>
+                <li>Use ChatGPT and are curious about how it works</li>
+                <li>Interested in getting into NLP research</li>
+            </ul>
+
+
+            <h2>Course Prerequisite</h2>
+            <ul>
+
+                <li>You need to have good programming skills in Python for replication/modification of recent NLP research.</li>
+                <li>We assume that you have a basic understanding of ML concepts. While it is possible to take CS475 without having taken CS376 or any other undergraduate ML course, we expect you to be familiar with concepts such as supervised vs unsupervised learning, train vs test data, clustering vs classification, accuracy/precision/recall, overfitting, SVM, random forest, and core deep learning techniques like backpropagation etc. You can learn these concepts as we go along, but you may find some lectures and papers difficult to understand if you do not put in extra time to learn these concepts.</li>
+                <li>This class uses Pytorch/NumPy for most of the coding projects/assignments. While TA support will be provided for all the assignments, it is still recommended you be familiar with PyTorch and have some experience beforehand.</li>
+            </ul>
+
+        </section>
+
+        <section id="logistics">
+            <h1>Class Logistics</h1>
+            
+            <ul>
+                <li><b>Time: </b>Monday and Wednesday (10:30 am - 11:45 am)</li>
+                <li><b>Location: </b>E3-1101 and Zoom for some guest lectures</li>
+                <li><b>Communication: </b> All course-related communication will be done through Slack. Invitation links will be sent to individual students via email. All written and verbal communication in this class will be in English.</li>
+                <li><b>TA Office Hours: </b>Every Friday, 3:00 pm - 4:00 pm (in-person); location will be announced soon. Office Hours with Alice can be scheduled through email. </li>
+                <ul>
+                    <li>Attendance is not required in Office hours, but you are encouraged to drop by to ask questions, get feedback on projects, discuss papers together, get help with assignments, and for mentorship. </li>
+                </ul>
+                <li><b>Contact: </b>For any questions regarding class material, please use Slack. For private queries, use the group-email provided below. You will be invited to the Slack server once you enroll in the class. </li>
+                <ul>
+                    <li>For private queries, use this {email} (to be updated soon) so that professor and all TAs will be able to read your email.</li>
+                </ul>
+                <li>All deadlines in this class are at 23:59 (GMT+9) on the stated date in the course calendar. </li>
+            </ul>
+            
+        </section>
+        <section id="schedule">
+            <h1>Class Schedule</h1>
+            <p>Coming soon.</p>
+
+        </section>
+
+        <section id="evaluation">
+            <h2>Evaluation</h2>
+        
+            <p>The coursework in CS475 will be a combination of the following (tentative):</p>
+                <div class="indented-content">
+            
+                        <h3>Assignments (40%)</h3>
+                    
+                        <ul>
+                            <li>There will be five assignments designed to help you understand some core concepts of Deep Learning and NLP. The assignments usually involve implementing some core algorithm/technique from scratch or doing some basic calculations by hand.
+                                <ul>
+                                    <li>The details of the assignments will be released very soon.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+                        <h3>Team Project (40%)</h3>
+                    
+                        <p>You will form teams of <em>three or four</em>, and as a team, you have to come up with a creative research question of your own and then execute it.</p>
+                    
+                        <p><strong>How do you come up with a creative research question?</strong></p>
+                    
+                        <p>— Well, there are a lot of ways, including but not limited to:</p>
+                    
+                        <ul>
+                            <li>Be curious and skeptic. Ask a lot of questions in the class! Some of the questions you will ask will not have definite answers as the NLP field is moving so fast, and that can be a great starting point for a class project.</li>
+                            <li>Read recent NLP papers and build on top of it. This is another way to come up with research questions (but not always the best). Think about how you can improve something, how one idea can be applied in another setting etc.</li>
+                            <li>If you still need help coming up with research questions, talk to the staff! We will guide you.</li>
+                        </ul>
+                    
+                        <p>More details will be given out during the first week of class.</p>
+                    
+                        <ul>
+                            <li><strong>Grading:</strong>
+                                <ul>
+                                    <li>Proposal 5%</li>
+                                    <li>Progress presentation 5%</li>
+                                    <li>Final presentation 10%</li>
+                                    <li>Written report 10%</li>
+                                    <li>Teamwork 5% (Note that any team may get up to -25% if there is a serious problem with teamwork)</li>
+                                    <li>Peer Review Participation 5%</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+                        <p>Presentations will be peer-graded, where you will be judged based on the novelty, interestingness, feasibility, and completeness of the project.</p>
+                    
+                        <p>There will be no midterm/final exam.</p>
+                    
+                        <h3>In-class-activity/Attendance (17%)</h3>
+                    
+                        <p>There will be small in-class activities in some classes, details of which will be provided later.</p>
+                    
+                        <p>Besides, the second half of our class includes several guest lectures. Your attendance and participation show appreciation for the time our guests put into preparing their talks.</p>
+                    
+                        <h3>Participation/Contribution (3%)</h3>
+                    
+                        <p>3% points are reserved for having engaging discussions on Slack, finding mistakes in homework assignments, and constructive criticisms of course material.</p>
+                    
+                <p>You are encouraged to write interesting threads on Slack, post paper reviews, and answer other students' questions.</p>
+            </div>
+        </section>
+
+        <section id="policy">
+            <h2>Course Policy</h2>
+        
+            <p>While we encourage collaboration between students in CS475, students must complete their individual assignments and homeworks on their own (discussing problem-solving strategies, resources, and group study is allowed; however, each student must make their own submissions). Plagiarism is not allowed under any circumstances (group projects and assignments) and we might use plagiarism detection tools to check for cheating in assignments.</p>
+        
+            <h3>LLM Policy</h3>
+        
+            <ul>
+                <li>We allow and encourage students to use AI-based tools, including large language models, but we require that students list the tools used and describe in detail how the tools are used. A more specific explanation of the policy will be given in class. Anyone not following this policy will be penalized, up to and including an F in the class.</li>
+            </ul>
+        
+            <h3>Late Policy</h3>
+        
+            <ul>
+                <li>All deadlines in this class are at 23:59 (GMT+9) on the stated date in the course calendar.</li>
+                <li>Every student affords 3 late days to use. You can use the late days for all homeworks and the final report. For the final report, the late days will be deducted from each individual member of the team.</li>
+                <li>Past three late days, 20% score will be deducted from your assignment/report score for each additional late day.</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
